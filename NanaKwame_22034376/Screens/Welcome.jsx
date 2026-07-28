@@ -1,21 +1,12 @@
-import {StyleSheet, View, Text, Pressable} from 'react-native'
-import { useNavigation } from '@react-navigation/native';
-import { Button } from 'react-native';
-export default function Welcome() {
-    const navigation = useNavigation();
+import React from "react";
+import { View, Text, Button } from "react-native";
+import { styles } from "../styles/commonStyles";
+
+export default function WelcomeScreen({ navigation }) {
   return (
-    <View style={styles.container}>
-      <Text>Welcome</Text>
-      <Button onPress={()=> navigation.navigate("Main")} title='get started'></Button>
+    <View style={[styles.container, styles.centered]}>
+      <Text style={styles.title}>Welcome to Campus Connect</Text>
+      <Button title="Get Started" onPress={() => navigation.navigate("Main")} />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
