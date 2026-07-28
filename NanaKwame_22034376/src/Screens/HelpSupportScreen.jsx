@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, Text, FlatList } from 'react-native';
-import { FAQS } from '../data/dummyData';
-import { styles } from '../styles/commonStyles';
+import React from "react";
+import { View, Text, FlatList } from "react-native";
+import { FAQS } from "../data/dummyData";
+import { styles } from "../styles/commonStyles";
 
 export default function HelpSupportScreen() {
   return (

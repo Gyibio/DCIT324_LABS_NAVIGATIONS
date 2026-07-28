@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
-import { styles } from '../styles/commonStyles';
+import React, { useState } from "react";
+import { View, Text, TextInput, Button } from "react-native";
+import { styles } from "../styles/commonStyles";
 
-export default function EditProfileScreen({ route, navigation, onSaveProfile }) {
+export default function EditProfileScreen({
+  route,
+  navigation,
+  onSaveProfile,
+}) {
   const { profile } = route.params;
   const [name, setName] = useState(profile.name);
   const [bio, setBio] = useState(profile.bio);
@@ -21,10 +25,19 @@ export default function EditProfileScreen({ route, navigation, onSaveProfile }) 
       <TextInput style={styles.input} value={name} onChangeText={setName} />
 
       <Text style={styles.label}>Programme:</Text>
-      <TextInput style={styles.input} value={programme} onChangeText={setProgramme} />
+      <TextInput
+        style={styles.input}
+        value={programme}
+        onChangeText={setProgramme}
+      />
 
       <Text style={styles.label}>Bio:</Text>
-      <TextInput style={styles.input} value={bio} onChangeText={setBio} multiline />
+      <TextInput
+        style={styles.input}
+        value={bio}
+        onChangeText={setBio}
+        multiline
+      />
 
       <Button title="Save" onPress={handleSave} />
     </View>

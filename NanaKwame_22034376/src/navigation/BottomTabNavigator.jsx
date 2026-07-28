@@ -1,9 +1,9 @@
-import React from 'react';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tab-navigator';
-import HomeStackNavigator from './HomeStackNavigator';
-import CoursesScreen from '../screens/CoursesScreen';
-import TimetableScreen from '../screens/TimetableScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import React from "react";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import HomeStackNavigator from "./HomeStackNavigator";
+import CoursesScreen from "../Screens/CoursesScreen";
+import TimetableScreen from "../src/Screens/TimetableScreen";
+import ProfileScreen from "../Screens/ProfileScreen";
 
 const Tab = createBottomTabNavigator();
 

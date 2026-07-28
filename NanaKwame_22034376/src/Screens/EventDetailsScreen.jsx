@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { styles } from '../styles/commonStyles';
+import React from "react";
+import { View, Text, Button } from "react-native";
+import { styles } from "../styles/commonStyles";
 
 export default function EventDetailsScreen({ route, navigation }) {
   const { event } = route.params;
